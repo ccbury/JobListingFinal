@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "666626861196",
+    "firebase_url": "https://joblisting-294221-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "joblisting-294221",
+    "storage_bucket": "joblisting-294221.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666626861196:android:2f686035c9d6f7ce7273a9",
+        "android_client_info": {
+          "package_name": "com.ccbury.joblisting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666626861196-fr49886to0ft905tt01h6s6lncqu44st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFZd-keTUMAcW6wtD0xSYMrkUqXqS8loo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666626861196-fr49886to0ft905tt01h6s6lncqu44st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

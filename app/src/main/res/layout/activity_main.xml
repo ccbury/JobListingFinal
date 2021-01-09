@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Making a scroll view so that when more entrys are present. user can scroll down the llst -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- Start of linear layout for the whole page-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Create a relative layout that will contain the information at the top of the screen -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Find new Careers"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:paddingLeft="35dp"
+                android:text="Click a box to view career options"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/computer" />
+        </RelativeLayout>
+        <!-- End of the top of the screen layout-->
+        <!-- Begin grid layout that will contain all of the buttons for the user-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:paddingTop="20dp"
+                android:rowCount="7">
+
+                <!-- First entry on grid. work from home -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/workFromHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/trans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/workathome" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Work from home"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of Work From Home entry -->
+                <!-- Start of computing entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/computing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/laptop" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Computing"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of computing entry -->
+
+                <!-- Start of accountancy entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/dataAnalytics"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/accounting" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Data Analytics"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of accountancy entry -->
+                <!-- Start of Engineering entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:id="@+id/softwareEngineer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/construction" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Software Engineer"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of Engineering entry -->
+
+
+                <!-- First entry on grid. work from home -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/cryptoCurrencies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/trans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/crypto" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Crypto Currencies"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of Work From Home entry -->
+                <!-- Start of computing entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/graduateJobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/laptop" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Graduate Jobs"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of computing entry -->
+
+                <!-- Start of accountancy entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="12dp">
+
+                    <Button
+                        android:id="@+id/itHelpdesk"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/accounting" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="IT Helpdesk"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- End of accountancy entry -->
+                <!-- Start of Engineering entry -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:outlineAmbientShadowColor="@color/trans"
+                    android:outlineSpotShadowColor="@color/trans"
+                    app:cardBackgroundColor="#88FFFFFF"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:id="@+id/projectManager"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:src="@drawable/construction" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Project Manager"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_800"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
